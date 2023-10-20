@@ -326,12 +326,12 @@ $('#id_form_registra').bootstrapValidator({
                 	message:'El nombre es de 3 a 100 caracteres',
                 	min : 3,
                 	max : 100
-                },
+                },   
                 remote :{
                 	delay   : 1000,
                 	url     : 'buscaEmpleadoNombreApellidoRegistro',
                 	message : 'El empleado ya existe',
-                	data: {
+                	data: {  //VARIBALES A ENVIAR , nombres Y apellidos
     		                nombres: function() {
     		                    return $('#id_reg_nombres').val();
     		                },
@@ -357,7 +357,7 @@ $('#id_form_registra').bootstrapValidator({
                 	delay   : 1000,
                 	url     : 'buscaEmpleadoNombreApellidoRegistro',
                 	message : 'El empleado ya existe',
-                	data: {
+                	data: {  //VARIBALES A ENVIAR , nombres Y apellidos
     		                nombres: function() {
     		                    return $('#id_reg_nombres').val();
     		                },

@@ -126,6 +126,10 @@ public class EmpleadoCrudController {
 		}
 	}
 	
+	
+	
+	//ESTE LO PUEDES HACER DESDE AQUI CON DESDE EL MISMO FORM o tambien desde el registrar con el alert
+	//en este caso lo haces desde el mismo form tanto para el modal registra y actualiza
 	@GetMapping("/buscaEmpleadoNombreApellidoActualiza")
 	@ResponseBody
 	public String validaEmpleadoActualiza(String nombres, String apellidos, String id) {
